@@ -11,7 +11,7 @@ const WheatherExtraInfo = ({humidity, wind}) => (
     </div>
 );
 WheatherExtraInfo.propTypes = {
-    humidity: PropTypes.string,
+    humidity: PropTypes.number,
     wind: PropTypes.string.isRequired,
 }
 
