@@ -3,13 +3,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import WheatherExtraInfo from './WeatherExtraInfo';
 import WheatherTemperature from './WeatherTemperature';
-// import { CLOUD,CLOUDY,SUN,RAIN,SNOW,WINDY } from '../../constants/weather'
-// import PropTypes from 'prop-types';
 import './style.css';
 
 const WheatherData = ({ data: {temperature, weatherState, humidity, wind } }) => {
-    // const  = data;
-
     return (
         <div className="WeatherDataCont">
             <WheatherTemperature temperature={temperature} weatherState={weatherState} />
@@ -17,14 +13,15 @@ const WheatherData = ({ data: {temperature, weatherState, humidity, wind } }) =>
         </div>
     );
 };
+
+// Validations of props
 WheatherData.propTypes = {
     data: PropTypes.shape({
             temperature: PropTypes.number.isRequired,
             humidity: PropTypes.number.isRequired,
-            wind: PropTypes.string.isRequired
+            wind: PropTypes.string.isRequired,
+            weatherState: PropTypes.string.isRequired,
         })
-        // weatherState: PropTypes.string.isRequired,
-        //     
 }
 
 export default WheatherData;

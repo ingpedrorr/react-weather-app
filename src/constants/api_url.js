@@ -1,7 +1,3 @@
 
-const location = "La Vega, DO";
-const API_KEY = ``; // YOUR API KEY
-const url_base_weather = `http://api.openweathermap.org/data/2.5/weather`;
-
-
-export const api_weather = `${url_base_weather}?q=${location}&APPID=${API_KEY}`; //&units=metric;
+export const API_KEY = `c023db4828de0b3f1f5ddeb665d84444`; // YOUR API KEY
+export const url_base_weather = `http://api.openweathermap.org/data/2.5/weather`;
